@@ -1,0 +1,29 @@
+Notes:
+
+Hierarchy
+
+- Home
+    - Audience
+        |_Healthcare Professional
+        |_Researcher
+            -Relevant Initiatives (1..n)
+                |_Initiative 1
+                    - Page
+                        |_Broader Description
+                            |_Use Tool (Link)
+                        |_Intended Audience
+                            |_Audience Description
+                        |_Potential Benefits/Outcomes
+                            |_Benefits/Outcomes Description
+                        |_Countributors
+                            |_Researchers ('business card') (1..n)
+                                |_Name/Role/Institution/Contact
+                            |_Research Partners (1..n)
+                                |_Name/Role/Institution/Contact
+                            |_Institutions
+                                |_Name
+                            |_Copyright Statement
+                    |_Breif Description
+                    |_Learn More (Link)
+                |_...
+        |_Patient

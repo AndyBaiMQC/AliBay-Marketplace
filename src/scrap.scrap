@@ -1,0 +1,84 @@
+      <Button variant="contained" color="primary">
+      Hello World
+    </Button>
+
+
+
+    // import EmailIcon from '@material-ui/icons/Email';
+// import PhoneIcon from '@material-ui/icons/Phone';
+
+class Clock extends React.Component {
+  render() {
+    return (
+<div className = "frame">
+   <img src="https://1rul3edyje33mh89fawaqtao-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/dummy-profile-pic-male1-300x300.jpg"  alt="Profile" className = "profile"/>
+   <h2>Kelley Kilpatrick</h2>
+   <div className = "details">
+      <p>Professor at the Faculty of Nursing Science of the University of montreal, member of the RRISIQ and member of the DDS pilot comittee </p>
+  </div>
+      <div class = "icon-grid">
+         <div><a href="mailto:webmaster@example.com">
+            <img src="https://image.flaticon.com/icons/svg/482/482948.svg" className = "contact" />
+            </a>
+         </div>
+         <div>
+            <img src="https://image.flaticon.com/icons/svg/483/483947.svg"
+               className = "contact" />
+         </div>
+      </div>
+
+</div>
+    );
+  }
+}
+
+function tick() {
+  ReactDOM.render(
+    <Clock date={new Date()} />,
+    document.getElementById('root')
+  );
+}
+
+setInterval(tick, 1000);
+
+.frame {
+  box-shadow: 2px 2px grey;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 0px;
+  max-width: 300px;
+  font-family: Arial;
+  
+}
+.details {
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: rgb(90, 90, 90);
+  border-bottom: solid 1px;
+
+}
+.profile {
+  width: 300px;
+  height: 300px;
+}
+.contact {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 10px;
+}
+
+<div id="root">
+    <!-- This element's contents will be replaced with your component. -->
+</div>
